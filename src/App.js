@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Test from './Test';
+import SelectTest01 from './components/SelectTest01';
+import SelectTest02 from './components/SelectTest02';
+import Customer from './components/Customer'
+import StateAndLifeCycle from './components/StateAndLifeCycle';
+import FilterTheDataWithInArray from './components/FilterTheDataWithInArray';
+import ListsAndKeys from './components/ListsAndKeys';
 function App() {
+
+  const numbers = [1, 2, 3, 4, 5];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ListsAndKeys/>
+     {/*<StateAndLifeCycle data={new Date}/>
+       <SelectTest02/>
+
+     
+      <SelectTest01/>
+      <Test/> 
+      */}
     </div>
   );
 }
